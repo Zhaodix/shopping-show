@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>千百汇购物网站宣传页</title>
+  <!-- 引入reset.css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- 引入normalize.css -->
+  <link rel="stylesheet" href="./lib/Normalize/css/normalize.css">
+  <!-- 1.reset.css 初始化样式(固定的) -->
+  <!-- 2.common.css 公共样式(最多的) -->
+  <!-- 3.page.css 页面独有的样式 -->
+  <!-- 引入fullpage.css  -->
+  <link rel="stylesheet" href="./lib/fullPage/css/jquery.fullpage.min.css">
+  <!-- 引入本页面的css -->
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <!-- 进入购物中心 -->
+  <img class="qbh-shopping-center" src="./image/shoppingcenter.png" alt="">
+  <!-- 全屏滚动 -->
+  <div id="fullpage">
+    <!-- 第一屏: 网站名称 -->
+    <div class="section qbh-title">
+      <!-- 为了防止屏幕变大 动画偏移造成的问题 -->
+      <div class="qbh-container">
+        <!-- 1.运动的网站名称 -->
+        <img class="qbh-title-name" src="./image/qbh-title-name.png" alt="">
+        <!-- 2.运动的沙发 -->
+        <img class="qbh-title-sofa" src="./image/qbh-title-sofa.png" alt="">
+        <!-- 3.其他东西 -->
+        <img class="qbh-title-extra" src="./image/qbh-title-extra.png" alt="">
+      </div>
+    </div>
+    <!-- 第二屏: 商品列表 -->
+    <div class="section qbh-list">
+      <div class="qbh-container">
+        <!-- 广告语 -->
+        <div class="qbh-list-word">
+          <img src="./image/qbh-list-worda.png" alt="">
+          <img src="./image/qbh-list-wordb.png" alt="">
+        </div>
+        <!-- 完成的搜索框 -->
+        <img class="qbh-list-finish" src="./image/qbh-list-search-finish.png" alt="">
+        <!-- 沙发列表 -->
+        <img class="qbh-list-sofas" src="./image/qbh-list-sofas.png" alt="">
+        <!-- 未完成的搜索框 -->
+        <div class="qbh-list-unfinish">
+          <img src="./image/qbh-list-search-box.png" alt="">
+          <img src="./image/qbh-list-search-font.png" alt="">
+        </div>
+        <!-- 掉下去的沙发 -->
+        <img class="qbh-list-drop" src="./image/qbh-list-sofa-pic.png" alt="">
+      </div>
+    </div>
+    <!-- 第三屏 BEM规范-->
+    <div class="section qbh-buy">
+      <div class="qbh-container">
+        <div class="qbh-buy-main">
+          <img src="./image/qbh-buy-main-bg.png" alt="">
+          <div class="qbh-buy-main-choose">
+            <div class="qbh-buy-main-choose-true">
+                <img src="./image/qbh-buy-choose-end.gif" alt="">
+                <img src="./image/qbh-buy-add-cart-end.gif" alt="">
+            </div>
+            <div class="qbh-buy-main-choose-false">
+                <img src="./image/qbh-buy-choose-start.gif" alt="">
+                <img src="./image/qbh-buy-add-cart-start.gif" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- 掉落的沙发 -->
+        <img class="qbh-buy-drop" src="./image/qbh-info-rotate-sofa.png" alt="">
+      </div>
+    </div>
+    <!-- 第四屏 -->
+    <div class="section qbh-info">
+      <div class="qbh-container">
+        <!-- 云彩 -->
+        <img class="qbh-info-cloud" src="./image/qbh-info-cloud.png" alt="">
+        <!-- 广告语 -->
+        <div class="qbh-info-word">
+          <img src="./image/qbh-info-worda.png" alt="">
+          <img src="./image/qbh-info-wordb.png" alt="">
+        </div>
+        <!-- 用户信息 -->
+        <div class="qbh-info-user">
+          <img src="./image/qbh-info-address-box.png" alt="">
+          <img src="./image/qbh-info-address.png" alt="">
+        </div>
+        <!-- 购物车 -->
+        <div class="qbh-info-cart">
+          <img src="./image/qbh-info-cart.png" alt="">
+          <img src="./image/qbh-info-rotate-sofa.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- 第五屏 -->
+    <div class="section qbh-payment">
+      <div class="qbh-container">
+        <!-- 广告语 -->
+        <img class="qbh-payment-word" src="./image/qbh-payment-font.png" alt="">
+        <!-- 掉落的沙发 -->
+        <img class="qbh-payment-drop" src="./image/qbh-info-rotate-sofa.png" alt="">
+        <!-- 账单 -->
+        <div class="qbh-payment-bill">
+          <img src="./image/qbh-payment-bill.png" alt="">
+          <img src="./image/qbh-payment-cards.png" alt="">
+          <img src="./image/qbh-info-rotate-sofa.png" alt="">
+        </div>
+        <!-- 点击操作(手和鼠标) -->
+        <div class="qbh-payment-mouse">
+          <img src="./image/qbh-payment-mouse-start.png" alt="">
+          <img src="./image/qbh-payment-mouse-end.png" alt="">
+        </div>
+        <!-- 手 -->
+        <img class="qbh-payment-hands" src="./image/qbh-payment-hands.png" alt="">
+        <img class="qbh-payment-drop2" src="./image/qbh-info-rotate-sofa.png" alt="">
+      </div>
+    </div>
+    <!-- 第六屏 -->
+    <div class="section qbh-delivery">
+      <div class="qbh-container">
+        <!-- 云彩 -->
+        <img class="qbh-delivery-cloud-one" src="./image/qbh-delivery-cloud-one.png" alt="">
+        <img class="qbh-delivery-cloud-two" src="./image/qbh-delivery-cloud-two.png" alt="">
+        <!-- 广告语 -->
+        <div class="qbh-delivery-word">
+          <img src="./image/qbh-delivery-font-start.png" alt="">
+          <img src="./image/qbh-delivery-font-end.png" alt="">
+        </div>
+        <!-- 快递箱 -->
+        <img class="qbh-delivery-box" src="./image/qbh-delivery-box.png" alt="">
+        <!-- 货车 -->
+        <div class="qbh-delivery-running">
+          <img src="./image/qbh-delivery-truck.png" alt="">
+          <img src="./image/qbh-delivery-truck-font.png" alt="">
+          <img src="./image/qbh-delivery-deliveryman.png" alt="">
+        </div>
+        <!-- 门 -->
+        <img class="qbh-delivery-door" src="./image/qbh-delivery-door.png" alt="">
+        <!-- 女孩 -->
+        <img class="qbh-delivery-buyer" src="./image/qbh-delivery-buyer.png" alt="">
+        <!-- 送货员说的话: 请收货 -->
+        <img class="qhb-delivery-message" src="./image/qbh-delivery-shouhuo.png" alt="">
+      </div>
+    </div>
+    <!-- 第七屏 -->
+    <div class="section qbh-appraise">
+      <div class="qbh-container">
+        <div class="qbh-appraise-main">
+          <div class="qbh-appraise-main-star">
+            <img src="./image/qbh-appraise-star.png" alt="">
+            <img src="./image/qbh-appraise-star.png" alt="">
+            <img src="./image/qbh-appraise-star.png" alt="">
+            <img src="./image/qbh-appraise-star.png" alt="">
+            <img src="./image/qbh-appraise-star.png" alt="">
+          </div>
+          <img class="qbh-appraise-haoping" src="./image/qbh-appraise-haoping.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- 第八屏 -->
+    <div class="section qbh-shopping">
+      <!--去购物 -->
+      <div class="qbh-shopping-main">
+        <div class="qbh-shopping-main-btn">
+          <img src="./image/qbh-shopping-start-shopping.png" alt="">
+          <img src="./image/qhb-shopping-dong.gif" alt="">
+        </div>
+        <!-- 再来一次 -->
+        <img class="qbh-shopping-main-again" src="./image/qbh-shopping-again.png" alt="">
+      </div>
+      <!-- 手 -->
+      <img class="qbh-shopping-hands" src="./image/qbh-shopping-hands.png" alt="">
+    </div>
+  </div>
+  <script src="./lib/jQuery/jQuery-1.8.3-min.js"></script>
+  <script src="./lib/fullPage/js/jquery.fullpage.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

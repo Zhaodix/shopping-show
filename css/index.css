@@ -1,0 +1,528 @@
+/* === 公共样式 === */
+.qbh-container {
+  position: relative;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+
+  background-color: rgba(0,0,0,0.1);
+}
+
+.qbh-shopping-center {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 10;
+}
+
+/* === 第一屏 === */
+.qbh-title {
+  background-image: url("../image/qbh-title-bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.qbh-title-name {
+  position: absolute;
+  bottom: 520px;
+  right: 220px;
+
+  animation: moveName 3s ease-in-out infinite;
+}
+
+@keyframes moveName {
+  0% {
+    bottom: 500px;
+  }
+  50% {
+    bottom: 520px;
+  }
+  100% {
+    bottom: 500px;
+  }
+}
+
+.qbh-title-sofa {
+  position: absolute;
+  bottom: 330px;
+  right: 670px;
+  /* linear ease ease-in ease-out ease-in-out steps() */
+  animation: moveSofa 1s linear infinite;
+
+}
+
+@keyframes moveSofa {
+  0% {
+    bottom: 300px;
+  }
+  50% {
+    bottom: 330px;
+  }
+  100% {
+    bottom: 300px;
+  }
+}
+
+.qbh-title-extra {
+  position: absolute;
+  bottom: 140px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+/* === 第二屏 === */
+.qbh-list {
+  background-image: url("../image/qbh-list-bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.qbh-list-word {
+  position: absolute;
+  right: 50%;
+  margin-right: -182px;
+  bottom: 550px;
+  width: 364px;
+  height: 28px;
+}
+
+.qbh-list-word img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.qbh-list-word img:last-child {
+  opacity: 0;
+}
+
+.qbh-list-finish {
+  position: absolute;
+  right: 50%;
+  margin-right: -111px;
+  bottom: 290px;
+  width: 222px;
+  display: none;
+}
+
+.qbh-list-sofas {
+  position: absolute;
+  right: 380px;
+  bottom: 210px;
+  /* width: 442px; */
+  width: 0;
+}
+
+.qbh-list-unfinish {
+  position: absolute;
+  right: 50%;
+  margin-right: -560px;
+  bottom: 290px;
+  width: 222px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.qbh-list-unfinish img:last-child {
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  right: 30px;
+}
+
+.qbh-list-drop {
+  display: none;
+  position: absolute;
+  bottom: 340px;
+  right: 606px;
+  width: 100px;
+  z-index: 1;
+}
+
+/* === 第三屏 === */
+.qbh-buy-main {
+  position: absolute;
+  right: 50%;
+  margin-right: -495px;
+  bottom: 0;
+  width: 990px;
+  height: 600px;
+}
+
+.qbh-buy-main-choose {
+  position: absolute;
+  bottom: 0px;
+  right: 160px;
+  width: 296px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.qbh-buy-main-choose-true,.qbh-buy-main-choose-false {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.qbh-buy-main-choose-true img:last-child,.qbh-buy-main-choose-false img:last-child {
+  margin-top: 20px;
+}
+
+/* .qbh-buy-main-choose-false  {
+  display: none;
+} */
+
+.qbh-buy-drop {
+  display: none;
+  position: absolute;
+  bottom: 230px;
+  right: 630px;
+  z-index: 3;
+}
+
+
+/* === 第四屏 === */
+.qbh-info {
+   background-image: url("../image/qbh-info-bg.png");
+   background-repeat: no-repeat;
+   background-position: center bottom;
+}
+
+.qbh-info-cloud {
+  position: absolute;
+  right: 0;
+  bottom: 520px;
+  animation: moveCloud 60s ease-in-out infinite;
+}
+
+@keyframes moveCloud {
+  0% {
+    right: -50%;
+  }
+  50% {
+    right: 50%;
+  }
+  100% {
+    right: -50%;
+  }
+}
+
+.qbh-info-word {
+  position: absolute;
+  bottom: 460px;
+  right: 50%;
+  margin-right: -215px;
+  width: 430px;
+  height: 32px;
+  overflow: hidden;
+}
+
+.qbh-info-word img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.qbh-info-word img:last-child {
+  display: none;
+}
+
+.qbh-info-user {
+  display: none;
+  position: absolute;
+  right: 50%;
+  margin-right: -142px;
+  bottom: 150px;
+  width: 284px;
+  height: 270px;
+}
+
+.qbh-info-user img:last-child {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  width: 174px;
+  /* calc 计算器
+    可以进行混合运算
+  */
+  margin-left: calc(-174px / 2);
+}
+
+.qbh-info-cart {
+  position: absolute;
+  bottom: 40px;
+  right: 440px;
+  width: 407px;
+  height: 346px;
+}
+
+.qbh-info-cart img:first-child {
+  position: relative;
+  z-index: 10;
+}
+
+.qbh-info-cart img:last-child {
+  display: none;
+  position: absolute;
+  bottom: 190px;
+  right: 70px;
+}
+
+/* === 第五屏 === */
+.qbh-payment {
+  background-image: url("../image/qbh-payment-bg.png");
+}
+
+.qbh-payment-word {
+  position: absolute;
+  bottom: 590px;
+  right: 480px;
+  /* 在z-index中 不能随意给的 
+      在后面的课程中 有一个地方要给99999999999
+  */
+  z-index: 2;
+}
+
+.qbh-payment-drop {
+  position: absolute;
+  bottom: 470px;
+  right: 800px;
+  display: none;
+}
+
+.qbh-payment-bill {
+  position: absolute;
+  right: 750px;
+  bottom: 180px;
+  width: 358px;
+  height: 221px;
+}
+
+.qbh-payment-bill img:first-child {
+  position: absolute;
+  top: 0;
+  left: 88px;
+}
+
+.qbh-payment-bill img:nth-child(2) {
+  position: relative;
+  z-index: 2;
+}
+
+.qbh-payment-bill img:last-child {
+  position: absolute;
+  top: 0;
+  left: 48px;
+}
+
+.qbh-payment-mouse {
+  position: absolute;
+  right: 210px;
+  bottom: 220px;
+  width: 205px;
+  height: 819px;
+  overflow: hidden;
+}
+
+.qbh-payment-hands {
+  position: absolute;
+  right: 270px;
+  bottom: -70px;
+}
+
+.qbh-payment-drop2 {
+  display: none;
+  position: absolute;
+  bottom: 44px;
+  right: 856px;
+  z-index: 2;
+}
+
+/* === 第六屏 === */
+.qbh-delivery {
+  background-image: url("../image/qbh-delivery-bg.png");
+  /* 现在背景图的位置是25% 最后的背景图的位置100% */
+  background-position: 25% bottom;
+  background-repeat: no-repeat;
+}
+
+.qbh-delivery-cloud-one {
+  position: absolute;
+  right: 0;
+  bottom: 570px;
+
+  animation:  moveClodOne 80s infinite;
+}
+
+@keyframes moveClodOne {
+  0% {
+    right: 50%;
+  }
+  50% {
+    right: -50%;
+  }
+  100%{
+    right: 50%;
+  }
+}
+
+.qbh-delivery-cloud-two {
+  position: absolute;
+  right: 200px;
+  bottom: 470px;
+
+  animation: moveClodTwo 30s infinite;
+}
+
+@keyframes moveClodTwo {
+  0% {
+    right: 100px;
+  }
+  50% {
+    right: 200px;
+  }
+  100%{
+    right: 100px;
+  }
+}
+
+.qbh-delivery-word {
+  position: absolute;
+  bottom: 440px;
+  right: 520px;
+  width: 308px;
+  height: 59px;
+  overflow: hidden;
+}
+
+.qbh-delivery-box {
+  position: absolute;
+  left: 0px;
+  bottom: 300px;
+  display: none;
+  z-index: 3;
+}
+
+.qbh-delivery-running {
+  position: absolute;
+  right: 580px;
+  bottom: 0;
+  width: 221px;
+  height: 122px;
+}
+
+.qbh-delivery-running img:nth-child(1) {
+  position: relative;
+  z-index: 3;
+}
+
+.qbh-delivery-running img:nth-child(2) {
+  position: absolute;
+  top: -60px;
+  right: -20px;
+  display: none;
+}
+
+.qbh-delivery-running img:nth-child(3) {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  height: 0px;
+}
+
+.qbh-delivery-door {
+  display: none;
+  position: absolute;
+  bottom: 116px;
+  right: 201px;
+}
+
+.qbh-delivery-buyer {
+  position: absolute;
+  right: 280px;
+  bottom: 116px;
+  height: 0;
+}
+
+.qhb-delivery-message {
+  display: none;
+  position: absolute;
+  bottom: 400px;
+  right: 370px;
+}
+
+/* === 第七屏 === */
+.qbh-appraise {
+  background-image: url("../image/qbh-appraise-bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.qbh-appraise-main {
+  position: absolute;
+  bottom: 350px;
+  right: 739px;
+  width: 205px;
+  height: 134px;
+}
+
+ .qbh-appraise-main-star {
+  position: absolute;
+  top: 26px;
+  left: 51px;
+  width: 0;
+  height: 15px;
+  overflow: hidden;
+ }
+
+ .qbh-appraise-main-star img {
+   margin-right: 3px;
+ }
+
+ .qbh-appraise-haoping {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 230px;
+  width: 1px;
+  height: 40px;
+ }
+
+ /* === 第八屏 === */
+ .qbh-shopping {
+   position: relative;
+   background-image: url("../image/qbh-shopping-bg.png");
+ }
+
+ .qbh-shopping-main {
+   position: absolute;
+   right: 50%;
+   margin-right: -195px;
+   bottom:300px;
+   width: 390px;
+   height: 156px;
+ }
+
+ .qbh-shopping-main-btn img {
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+
+ .qbh-shopping-main-btn img:last-child {
+   display: none;
+ }
+
+ .qbh-shopping-main:hover .qbh-shopping-main-btn img:last-child  {
+   display: block;
+ }
+
+ .qbh-shopping-main-again {
+  position: absolute;
+  top: 70px;
+  left: 430px;
+ }
+
+ .qbh-shopping-hands {
+   position: absolute;
+ }
